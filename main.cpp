@@ -14,8 +14,8 @@
 #include <esp_wifi.h>
 #include <esp_now.h>
 #include <time.h>
-#define SERVICE_UUID        "4fafc201-1fb5-459e-8fcc-c5c9c331914b"   // UUID for the service
-#define CHARACTERISTIC_UUID "beb5483e-36e1-4688-b7f5-ea07361b26a8"  // UUID for the characteristic   
+#define SERVICE_UUID        "****"   // UUID for the service
+#define CHARACTERISTIC_UUID "****"  // UUID for the characteristic   
 #define DT 26     //HX711 Pin
 #define SCK 27   //HX711 Pin
 #define BUTTON_PIN 15   // Button pin
@@ -169,8 +169,8 @@ String paths3  = "/NUTNHAN3";
 String paths4  = "/KHOILUONG";
 String paths5  = "/CALIBCELL";
 String paths6  = "/MAXCELL";
-const char ssid[] = "Hoai Phuong";
-const char pass[] = "LTHP190498@";
+const char ssid[] = ""****"";
+const char pass[] = ""****"";
 // const char ssid[] = "Xiaomi 14T";
 // const char pass[] = "qz4uhgasvw32fjh";
 // const char ssid[] = "Ca Phe Vong";
@@ -234,17 +234,17 @@ void writeSingleCommand(const uint8_t command) {
   digitalWrite(PIN_STB, LOW);
   shiftOut(PIN_DIO, PIN_CLK, LSBFIRST, command);
   digitalWrite(PIN_STB, HIGH);
-  delayMicroseconds(1); // Пауза до следующей команды
+  delayMicroseconds(1); 
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 void updateDisplay(void) {
-  writeSingleCommand(0x40);  // запись данных, автоматический адрес
+  writeSingleCommand(0x40);  
   digitalWrite(PIN_STB, LOW);
-  shiftOut(PIN_DIO, PIN_CLK, LSBFIRST, 0xC0); // Установка адреса в 0
+  shiftOut(PIN_DIO, PIN_CLK, LSBFIRST, 0xC0);
   uint8_t * p = (uint8_t *) ledGRID;
-  for (int8_t i = 0; i < LED_DATA_LENGTH; i++, p++) shiftOut(PIN_DIO, PIN_CLK, LSBFIRST, *p); // запись данных
+  for (int8_t i = 0; i < LED_DATA_LENGTH; i++, p++) shiftOut(PIN_DIO, PIN_CLK, LSBFIRST, *p); 
   digitalWrite(PIN_STB, HIGH);
-  delayMicroseconds(1); // Пауза до следующей команды
+  delayMicroseconds(1); 
 
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -254,16 +254,16 @@ static inline uint8_t setBrightness(const uint8_t newBrighness) {
 
     currentBrightness = (newBrighness > 8) ? 8 : newBrighness;
 
-    if (currentBrightness == 0) writeSingleCommand(0x80); // Выключить дисплей
+    if (currentBrightness == 0) writeSingleCommand(0x80); 
 
-    else writeSingleCommand(0x88 + (currentBrightness - 1)); // Установить яркость
+    else writeSingleCommand(0x88 + (currentBrightness - 1)); 
 
     return res;
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 static inline void setDigit(const int8_t digit, const uint16_t value) {
-  if (digit < 0 || digit > 6) return; // цифры у нас с 1-ой по 4-ую слева направо
-  ledGRID[digit] = value; // не обижать дополнительный символ, если есть
+  if (digit < 0 || digit > 6) return; 
+  ledGRID[digit] = value; 
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 void setDigitMapped(uint16_t logicalPos, uint16_t value) {
@@ -471,8 +471,8 @@ void setup(void) {
   pinMode(PIN_STB, OUTPUT);  // TM1628 STB pin
   digitalWrite(PIN_STB, HIGH); // TM1628 STB pin
   digitalWrite(PIN_CLK, HIGH);  // TM1628 CLK pin
-  config.host = "iot-arduino-40f94-default-rtdb.asia-southeast1.firebasedatabase.app";
-    config.api_key = "AIzaSyDglobI51-CImZeGcvW3uca3j399N1ArRE";
+  config.host = ""****"";
+    config.api_key = ""****"";
     auth.user.email = "candientu@gmail.com";
     auth.user.password = "namdt@";
   WiFi.begin(ssid, pass);
