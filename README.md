@@ -7,3 +7,11 @@ Ngoài các thư viện liên quan đến BLE, dự án cũng sử dụng thêm 
   **syk01/TM1628@^1.0.0
   bogde/HX711@^0.7.5
   mobizt/Firebase ESP32 Client@^4.4.17**
+
+Giống như một số dự án trước, trong dự án này tôi cũng xây dựng một chương trình ứng dụng Android giúp giám sát và điều khiển từ xa:
+<img width="373" height="803" alt="image" src="https://github.com/user-attachments/assets/9ee37c36-c8a3-4287-96fb-e64d73f79a87" />
+
+<img width="375" height="805" alt="image" src="https://github.com/user-attachments/assets/55c4c923-9944-4581-990b-f560d986a2bc" />
+
+
+Hiện tại 27/07/25, dự án vẫn đang trong quá trình hoàn thiện thêm một số chức năng và tối ưu hoạt động. Thời gian tới tôi sẽ update nếu có sự thay đổi gì đó đáng kể, xin chân thành cảm ơn bạn đã xem.
