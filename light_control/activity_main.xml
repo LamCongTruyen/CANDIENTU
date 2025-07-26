@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center"
+        android:text="@string/quan_ly_can"
+        android:textColor="#dc143c"
+        android:textSize="30sp"
+        android:background="#FFFFFF"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "@string/ten_dang_nhap"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#dc143c"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="30dp"/>
+
+    <EditText
+        android:id="@+id/editemail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/hay_nhap_ten_tk_cua_ban"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:importantForAutofill="no"
+        tools:ignore="TextFields,VisualLintTextFieldSize" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mat_khau"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#dc143c"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        />
+
+    <EditText
+        android:id="@+id/editpass"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="@string/hay_nhap_mk_cua_ban"
+        android:inputType="textPassword"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:importantForAutofill="no"
+        tools:ignore="VisualLintTextFieldSize" />
+
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#dc143c"
+        android:text="@string/dang_nhap" />
+
+</LinearLayout>

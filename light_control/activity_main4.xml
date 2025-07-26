@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        tools:layout_editor_absoluteX="-155dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            tools:ignore="ExtraText">
+
+            <TextView
+                android:id="@+id/trang_ch_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:text="@string/bluetooth2"
+                android:textColor="#dc143c"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="5dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/quaylai"
+                android:src="@drawable/baseline_arrow_back_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/trang_ch_text"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardGasLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/trang_ch_text">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+
+                    android:padding="15dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        tools:ignore="TextSizeCheck,UselessParent">
+
+                        <TextView
+                            android:id="@+id/textGasLevel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/gas_value"
+                            android:textColor="#dc143c"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/mq2TextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="6"
+                            android:gravity="center"
+                            android:text="@string/gas"
+                            android:textColor="#dc143c"
+                            android:textSize="60sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardHumidity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardGasLevel">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:id="@+id/bt_status"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/edittext_background"
+                            android:padding="10dp"
+                            android:text="@string/trangthai"
+                            android:textColor="#616161"
+                            android:textSize="15sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/cardGasLevel" />
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+
+                            android:gravity="center">
+
+                            <Button
+                                android:id="@+id/btn_disconnect_bt"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginEnd="8dp"
+                                android:backgroundTint="#dc143c"
+                                android:textColor="#FFFFFF"
+                                android:layout_weight="1"
+                                style="?android:attr/buttonBarButtonStyle"
+                                app:cornerRadius="12dp"
+                                android:text="@string/ngat_ket_noi"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/btn_connect_bt"
+                                app:layout_constraintTop_toBottomOf="@+id/bt_status"
+                                tools:ignore="VisualLintButtonSize" />
+
+                            <Button
+                                android:id="@+id/btn_connect_bt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textColor="#FFFFFF"
+                                style="?android:attr/buttonBarButtonStyle"
+                                app:cornerRadius="12dp"
+                                android:backgroundTint="#dc143c"
+                                android:text="@string/ket_noi_ble"
+                                app:layout_constraintEnd_toStartOf="@+id/btn_disconnect_bt"
+                                app:layout_constraintHorizontal_chainStyle="spread"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/bt_status"
+                                tools:ignore="VisualLintButtonSize" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="2dp"
+                            android:orientation="horizontal"
+                            android:padding="25dp">
+
+                            <Button
+                                android:id="@+id/Relay1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="8dp"
+                                android:backgroundTint="#dc143c"
+                                android:layout_weight="1"
+                                android:textColor="#FFFFFF"
+                                android:text="@string/relay1"
+                                app:cornerRadius="12dp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.051"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                                app:layout_constraintVertical_bias="0.105"
+                                tools:ignore="DuplicateSpeakableTextCheck"
+                                style="?android:attr/buttonBarButtonStyle" />
+
+                            <Button
+                                android:id="@+id/Relay2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:backgroundTint="#dc143c"
+                                android:textColor="#FFFFFF"
+                                app:cornerRadius="12dp"
+                                android:text="@string/sys_warning"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.051"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                                app:layout_constraintVertical_bias="0.105"
+                                tools:ignore="DuplicateSpeakableTextCheck"
+                                style="?android:attr/buttonBarButtonStyle"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/textTemperature"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:gravity="center"
+                            android:text="@string/khoi_luong_can_chuan"
+                            android:textColor="#dc143c"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/input_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittext_background"
+                            android:hint="@string/nhap_khoi_luongkg"
+                            android:importantForAutofill="no"
+                            android:padding="17dp"
+                            android:textSize="15sp"
+                            tools:ignore="TextFields,VisualLintTextFieldSize" />
+
+                        <TextView
+                            android:id="@+id/textHumidity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="@string/humidity"
+                            android:textColor="#dc143c"
+                            android:textSize="18sp" />
+
+                        <EditText
+                            android:id="@+id/input_data2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittext_background"
+                            android:hint="@string/nhap_khoi_luongkg2"
+                            android:importantForAutofill="no"
+                            android:padding="17dp"
+                            android:textSize="15sp"
+                            tools:ignore="TextFields,VisualLintTextFieldSize" />
+
+                        <Button
+                            android:id="@+id/btn_send_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="2dp"
+                            android:backgroundTint="#dc143c"
+                            android:textColor="#FFFFFF"
+                            style="?android:attr/buttonBarButtonStyle"
+                            app:cornerRadius="12dp"
+                            android:text="@string/gui_du_lieu"
+                            tools:ignore="VisualLintButtonSize" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            /////////////
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
