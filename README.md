@@ -10,6 +10,8 @@ Ngoài các thư viện liên quan đến BLE, dự án cũng sử dụng thêm 
 
 Giống như một số dự án trước, trong dự án này tôi cũng xây dựng một chương trình ứng dụng Android giúp giám sát và điều khiển từ xa:
 
+<img width="373" height="803" alt="image" src="https://github.com/user-attachments/assets/a20edd5f-00d5-4952-9e9a-1a384d5c2c18" />
+
 <img width="373" height="803" alt="image" src="https://github.com/user-attachments/assets/9ee37c36-c8a3-4287-96fb-e64d73f79a87" />
 
 <img width="373" height="803" alt="image" src="https://github.com/user-attachments/assets/fe96a1e2-447c-44c4-bd72-2d0c50c66544" />
