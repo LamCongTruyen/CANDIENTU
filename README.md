@@ -12,9 +12,9 @@ Giống như một số dự án trước, trong dự án này tôi cũng xây d
 
 <img width="373" height="803" alt="image" src="https://github.com/user-attachments/assets/9ee37c36-c8a3-4287-96fb-e64d73f79a87" />
 
-<img width="575" height="1280" alt="image" src="https://github.com/user-attachments/assets/fe96a1e2-447c-44c4-bd72-2d0c50c66544" />
+<img width="373" height="803" alt="image" src="https://github.com/user-attachments/assets/fe96a1e2-447c-44c4-bd72-2d0c50c66544" />
 
-<img width="858" height="1908" alt="image" src="https://github.com/user-attachments/assets/7300cda9-70f7-4761-81f4-c5857bffa1f5" />
+<img width="373" height="803" alt="image" src="https://github.com/user-attachments/assets/7300cda9-70f7-4761-81f4-c5857bffa1f5" />
 
 
 Hiện tại 27/07/25, dự án vẫn đang trong quá trình hoàn thiện thêm một số chức năng và tối ưu hoạt động. Thời gian tới tôi sẽ update nếu có sự thay đổi gì đó đáng kể, xin chân thành cảm ơn bạn đã xem.
