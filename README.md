@@ -18,7 +18,7 @@ Giống như một số dự án trước, trong dự án này tôi cũng xây d
 
 <img width="373" height="803" alt="image" src="https://github.com/user-attachments/assets/7300cda9-70f7-4761-81f4-c5857bffa1f5" />
 
-
+Đến ngày 24/08/25 tôi bổ sung thêm chức năng "Deep sleep" cho khối hiển thị và giao tiếp app đồn thời "Light Sleep" cho khối đọc ADC. Từ đó tăng khả năng tiết kiệm năng lượng nhưng vẫn cho ra chức năn vượt trội so với các sản phẩm trên thị trường.
 Hiện tại 27/07/25, dự án vẫn đang trong quá trình hoàn thiện thêm một số chức năng và tối ưu hoạt động. Thời gian tới tôi sẽ update nếu có sự thay đổi gì đó đáng kể, xin chân thành cảm ơn bạn đã xem.
 
 Hiện tại 04/08/2025, dự án có một số thay đổi đó là tôi không còn sử dụng Firebase nhằm thực hiện giao tiếp không dây nữa bởi vì trong khả năng tài chính của tôi thì không đủ kinh phí để trả phí cho dịch vụ. Và điều quan trọng nhất đó là khi thực hiện giao tiếp mạng trong một khoảng thời gian thì Token liên tục bị mất hiệu lực và tôi không tìm được cách để xử lí tình huống nào do đó tôi chuyển qua sử dụng giao tiếp BLE để gửi,nhận dữ liệu giữa ESP32 và App. Bên cạnh đó tôi cũng sử dụng thêm giao thức ESPNOW để gửi,nhận dữ liệu giữa hai ESP. Điều này được thực hiện sau khi tôi thấy Firebase không còn phù hợp và tôi nghĩ ra rằng mình nên tạo một bảng điều khiển và hiển thị LED 7 đoạn được kết nối không dây với Loadcells sẽ phục vụ tốt trong những môi trường ẩm ướt như cân thủy sản,... . Và với khoảng cách hỗ trợ của hai giao thứ này (BLE,ESPNOW) cũng khá lý tưởng (khoảng 50-200m ở điều kiện tốt) thì cũng hỗ trợ sử dụng ở thực tế tốt hơn.
