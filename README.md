@@ -1,4 +1,4 @@
-# CÂN ĐIỆN TỬ
+# CÂN ĐIỆN TỬ - dự án tự học
 
 # Cập nhật ngày 10/03/2026 : Dự án làm cân điện tử kết hợp hiển thị không dây với ESP32 có vấn đề về xử lý tiêu thụ năng lượng với các loại cân nhỏ, cân di động, cân treo. 
 # Hiện tại tôi đã chuyển sang xử dụng STM32F1 thay thế cho dòng ESP32 làm MCU chính xử lý các tác vụ đọc ADC HX711-ADS1230, gửi dữ liệu cho IC giải mã led 7 đoạn. 
