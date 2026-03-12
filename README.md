@@ -1,7 +1,7 @@
 # CÂN ĐIỆN TỬ - Dự Án Tự Học
 
 # Cập nhật ngày 10/03/2026 : 
-Dự án làm cân điện tử kết hợp hiển thị không dây với ESP32 có vấn đề về xử lý tiêu thụ năng lượng với các loại cân nhỏ, cân di động, cân treo. 
+Dự án làm mạch cân điện tử kết hợp hiển thị không dây với ESP32 có vấn đề về xử lý tiêu thụ năng lượng với các loại cân nhỏ, cân di động, cân treo. 
 Hiện tại tôi đã chuyển sang xử dụng STM32F1 thay thế cho dòng ESP32 làm MCU chính xử lý các tác vụ đọc ADC HX711-ADS1230, gửi dữ liệu cho IC giải mã led 7 đoạn. 
 Với các thay đổi như vậy thì dòng điện tiêu thụ khi sử dụng ESP32 khoảng 140mA giảm xuống còn khoảng 80mA khi hoạt động bình thường, và tắt LED khi không có cân nặng trên Loadcell để giảm điện năng tiêu thụ thì dòng điện treo còn khoảng 40mA theo những gì tôi đo được từ đồng hồ điện tử. Thay đổi như vậy tương đương với các sản phẩm hiện có trên thị trường, tương lai khi hoàn thiện phần cứng tôi sẽ cập nhật thêm.
 
