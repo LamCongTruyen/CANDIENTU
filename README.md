@@ -9,7 +9,7 @@ Với các thay đổi như vậy thì dòng điện tiêu thụ khi sử dụng
 Kết hợp thêm 1 nút nhấn tại chân SYS-WKUP, trong trường hợp không có cân nặng đặt trên Loadcell thì sau 3p sẽ tắt LED, nối tiếp sau đó 3p nếu vẫn không có thay đổi thì STM32 sẽ vào Low power Mode - Standby Mode.
 
 # Ưu điểm (hoạt động ở 5V - 16Mhz) :
-- Tiết kiệm điện tối đa [ Nomal: ~81mA , OffLedd; ~40mA, StandbyMode: ~10uA (chưa đo được chính xác) ]
+- Tiết kiệm điện tối đa [ Normal: ~81mA , OffLedd; ~40mA, StandbyMode: ~10uA (chưa đo được chính xác) ]
 - Dễ tinh chỉnh cấu hình phù hợp theo yêu cầu người dùng - sửa chữa - thay thế
 - Gía thành ổn
 - Sử dụng IC hiển thị TM1629A có thể thay thế - sửa chữa cho nhiều dòng cân
