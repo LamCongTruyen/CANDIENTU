@@ -1,8 +1,20 @@
-# CÂN ĐIỆN TỬ - dự án tự học
+# CÂN ĐIỆN TỬ - Dự Án Tự Học
 
-# Cập nhật ngày 10/03/2026 : Dự án làm cân điện tử kết hợp hiển thị không dây với ESP32 có vấn đề về xử lý tiêu thụ năng lượng với các loại cân nhỏ, cân di động, cân treo. 
-# Hiện tại tôi đã chuyển sang xử dụng STM32F1 thay thế cho dòng ESP32 làm MCU chính xử lý các tác vụ đọc ADC HX711-ADS1230, gửi dữ liệu cho IC giải mã led 7 đoạn. 
-Với các thay đổi như vậy thì dòng điện tiêu thụ khi sử dụng ESP32 khoảng 140mA giảm xuống còn khoảng 80mA khi hoạt động bình thường, và khi tắt LED để giảm điện năng tiêu thụ thì dòng điện treo còn khoảng 40mA theo những gì tôi đo được từ đồng hồ điện tử. Thay đổi như vậy tương đương với các sản phẩm hiện có trên thị trường, tương lai khi hoàn thiện phần cứng tôi sẽ cập nhật thêm.
+# Cập nhật ngày 10/03/2026 : 
+Dự án làm cân điện tử kết hợp hiển thị không dây với ESP32 có vấn đề về xử lý tiêu thụ năng lượng với các loại cân nhỏ, cân di động, cân treo. 
+Hiện tại tôi đã chuyển sang xử dụng STM32F1 thay thế cho dòng ESP32 làm MCU chính xử lý các tác vụ đọc ADC HX711-ADS1230, gửi dữ liệu cho IC giải mã led 7 đoạn. 
+Với các thay đổi như vậy thì dòng điện tiêu thụ khi sử dụng ESP32 khoảng 140mA giảm xuống còn khoảng 80mA khi hoạt động bình thường, và tắt LED khi không có cân nặng trên Loadcell để giảm điện năng tiêu thụ thì dòng điện treo còn khoảng 40mA theo những gì tôi đo được từ đồng hồ điện tử. Thay đổi như vậy tương đương với các sản phẩm hiện có trên thị trường, tương lai khi hoàn thiện phần cứng tôi sẽ cập nhật thêm.
+
+# Cập nhật ngày 12/03/2026 : 
+Kết hợp thêm 1 nút nhấn tại chân SYS-WKUP, trong trường hợp không có cân nặng đặt trên Loadcell thì sau 3p sẽ tắt LED, nối tiếp sau đó 3p nếu vẫn không có thay đổi thì STM32 sẽ vào Low power Mode - Standby Mode.
+
+# Hình ảnh phần cứng thực hiện kiểm tra độ ổn định:
+
+![z7614591732828_4812db6e06ef42b3008b904f9e274086](https://github.com/user-attachments/assets/6bb186e7-45fb-47e4-9d3a-65b3e4b4d108)
+
+# Video test
+
+Link:https://youtu.be/9Hn5jxMhens
 
 Dự án này là dự án cá nhân tự học, tôi nghiên cứu nhằm giải quyết vấn đề một số cân điện tử đặc biệt là cân hải sản kích thước lớn không có tính linh hoạt hoặc một số hoạt động trong môi trường ẩm ướt lâu này dễ làm hư hỏng bảng mạch chính.
 
