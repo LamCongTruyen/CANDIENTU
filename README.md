@@ -8,6 +8,16 @@ Với các thay đổi như vậy thì dòng điện tiêu thụ khi sử dụng
 # Cập nhật ngày 12/03/2026 : 
 Kết hợp thêm 1 nút nhấn tại chân SYS-WKUP, trong trường hợp không có cân nặng đặt trên Loadcell thì sau 3p sẽ tắt LED, nối tiếp sau đó 3p nếu vẫn không có thay đổi thì STM32 sẽ vào Low power Mode - Standby Mode.
 
+# Ưu điểm (hoạt động ở 5V - 16Mhz) :
+- Tiết kiệm điện tối đa [ Nomal: ~81mA , OffLedd; ~40mA, StandbyMode: ~10uA (chưa đo được chính xác) ]
+- Dễ tinh chỉnh cấu hình phù hợp theo yêu cầu người dùng - sửa chữa - thay thế
+- Gía thành ổn
+- Sử dụng IC hiển thị TM1629A có thể thay thế - sửa chữa cho nhiều dòng cân
+- ADC HX711-ADS1230 có sẵn trên nhiều dòng cân có thể tận dụng lại
+
+# Nhược điểm :
+- Cần thêm 1 PCB nhỏ
+  
 # Hình ảnh phần cứng thực hiện kiểm tra độ ổn định:
 
 ![z7614591732828_4812db6e06ef42b3008b904f9e274086](https://github.com/user-attachments/assets/6bb186e7-45fb-47e4-9d3a-65b3e4b4d108)
@@ -16,6 +26,7 @@ Kết hợp thêm 1 nút nhấn tại chân SYS-WKUP, trong trường hợp khô
 
 Link:https://youtu.be/9Hn5jxMhens
 
+# Trước tháng 12/2025
 Dự án này là dự án cá nhân tự học, tôi nghiên cứu nhằm giải quyết vấn đề một số cân điện tử đặc biệt là cân hải sản kích thước lớn không có tính linh hoạt hoặc một số hoạt động trong môi trường ẩm ướt lâu này dễ làm hư hỏng bảng mạch chính.
 
 File main.cpp là chương trình chính trong dự án, gồm chương trình liên quan đến Firebase (dùng để tạo giao tiếp với ứng dụng giám sát và điều khiển trên điện thoại), chương trình dùng để hiển thị trên led 7 đoạn bằng họ IC TM16XX cụ thể trong dự án này là TM1629A và TM1624 được tôi xây dựng lại dựa trên thư viện cùng họ là TM1628 của tác giả sky01, cũng như chương trình hỗ trợ chuyển đổi giao tiếp ESP32 với ứng dụng bằng Firebase qua giao tiếp BLE cung cấp điều kiện hoạt động nhiều hơn.
