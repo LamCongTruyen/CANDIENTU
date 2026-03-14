@@ -1,4 +1,4 @@
-# CÂN ĐIỆN TỬ - Dự Án Tự Học
+# CÂN ĐIỆN TỬ - Dự Án Thực Tế Tự Học
 
 # Cập nhật ngày 10/03/2026 : 
 Dự án làm mạch cân điện tử kết hợp hiển thị không dây với ESP32 có vấn đề về xử lý tiêu thụ năng lượng với các loại cân nhỏ, cân di động, cân treo. 
