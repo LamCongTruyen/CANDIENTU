@@ -22,7 +22,7 @@ Kết hợp thêm 1 nút nhấn tại chân SYS-WKUP, trong trường hợp khô
 # Hình ảnh phần cứng thực hiện kiểm tra độ ổn định:
 <img width="373" height="803" alt="image" src="https://github.com/LamCongTruyen/CANDIENTU/issues/2#issue-4080606404" />
 
-![z7614591732828_4812db6e06ef42b3008b904f9e274086](https://github.com/user-attachments/assets/6bb186e7-45fb-47e4-9d3a-65b3e4b4d108)
+
 
 # Video test
 
