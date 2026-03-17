@@ -3,13 +3,13 @@
 # Cập nhật ngày 10/03/2026 : 
 Dự án làm mạch cân điện tử kết hợp hiển thị không dây với ESP32 có vấn đề về xử lý tiêu thụ năng lượng với các loại cân nhỏ, cân di động, cân treo. 
 Hiện tại tôi đã chuyển sang xử dụng STM32F1 thay thế cho dòng ESP32 làm MCU chính xử lý các tác vụ đọc ADC HX711-ADS1230, gửi dữ liệu cho IC giải mã led 7 đoạn. 
-Với các thay đổi như vậy thì dòng điện tiêu thụ khi sử dụng ESP32 khoảng 140mA giảm xuống còn khoảng 80mA khi hoạt động bình thường, và tắt LED khi không có cân nặng trên Loadcell để giảm điện năng tiêu thụ thì dòng điện treo còn khoảng 40mA theo những gì tôi đo được từ đồng hồ điện tử. Thay đổi như vậy tương đương với các sản phẩm hiện có trên thị trường, tương lai khi hoàn thiện phần cứng tôi sẽ cập nhật thêm.
+Với các thay đổi như vậy thì dòng điện tiêu thụ khi sử dụng ESP32 khoảng 140mA giảm xuống còn khoảng 60mA khi hoạt động bình thường, và tắt LED khi không có cân nặng trên Loadcell để giảm điện năng tiêu thụ thì dòng điện treo còn khoảng 40mA theo những gì tôi đo được từ đồng hồ điện tử. Thay đổi như vậy tương đương với các sản phẩm hiện có trên thị trường, tương lai khi hoàn thiện phần cứng tôi sẽ cập nhật thêm.
 
 # Cập nhật ngày 12/03/2026 : 
 Kết hợp thêm 1 nút nhấn tại chân SYS-WKUP, trong trường hợp không có cân nặng đặt trên Loadcell thì sau 3p sẽ tắt LED, nối tiếp sau đó 3p nếu vẫn không có thay đổi thì STM32 sẽ vào Low power Mode - Standby Mode.
 
 # Ưu điểm (hoạt động ở 5V - 16Mhz) :
-- Tiết kiệm điện tối đa [ Normal: ~81mA , OffLed; ~40mA, StandbyMode: ~10uA (chưa đo được chính xác) ]
+- Tiết kiệm điện tối đa [ Normal: ~58mA , OffLed; ~40mA, StandbyMode: ~10uA (chưa đo được chính xác) ]
 - Dễ tinh chỉnh cấu hình phù hợp theo yêu cầu người dùng - sửa chữa - thay thế
 - Gía thành ổn
 - Sử dụng IC hiển thị TM1629A có thể thay thế - sửa chữa cho nhiều dòng cân
