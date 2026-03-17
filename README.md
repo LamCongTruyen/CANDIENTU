@@ -20,6 +20,9 @@ Kết hợp thêm 1 nút nhấn tại chân SYS-WKUP, trong trường hợp khô
 - Cần thêm 1 PCB nhỏ
   
 # Hình ảnh phần cứng thực hiện kiểm tra độ ổn định:
+Nguồn điện tiêu thụ ở trang thái hoạt động bình thường
+![z7631100479818_3f599670de755eefb01ffe906692a63e](https://github.com/user-attachments/assets/8015a399-df90-472d-9cb2-019e970dd2d1)
+
 ![z7614591732828_4812db6e06ef42b3008b904f9e274086](https://github.com/user-attachments/assets/6bb186e7-45fb-47e4-9d3a-65b3e4b4d108)
 
 # Video test
