@@ -12,7 +12,7 @@ Kết hợp thêm 1 nút nhấn tại chân SYS-WKUP, trong trường hợp khô
 - Tiết kiệm điện tối đa [ Normal: ~58mA , OffLed; ~40mA, StandbyMode: ~10uA (chưa đo được chính xác) ]
 - Dễ tinh chỉnh cấu hình phù hợp theo yêu cầu người dùng - sửa chữa - thay thế
 - Gía thành ổn
-- Sử dụng IC hiển thị TM1629A có thể thay thế - sửa chữa cho nhiều dòng cân
+- Sử dụng IC hiển thị TM1629A có giá thành rẻ, phổ biến ,dễ dàng thay thế - sửa chữa cho nhiều dòng cân
 - ADC HX711-ADS1230 giá rẻ - dễ mua - có sẵn trên nhiều dòng cân có thể tận dụng lại
 - Tín hiệu ổn định - đáng tin
   
